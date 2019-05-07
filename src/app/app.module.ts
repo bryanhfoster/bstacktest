@@ -34,8 +34,6 @@ import { AppRoutingModule } from './app.routing';
 // Import 3rd party components
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-import { ChartsModule } from 'ng2-charts/ng2-charts';
-import { DailyScheduleComponent } from './views/daily-schedule/daily-schedule.component';
 
 @NgModule({
   imports: [
@@ -49,13 +47,11 @@ import { DailyScheduleComponent } from './views/daily-schedule/daily-schedule.co
     AppSidebarModule,
     PerfectScrollbarModule,
     BsDropdownModule.forRoot(),
-    TabsModule.forRoot(),
-    ChartsModule
+    TabsModule.forRoot()
   ],
   declarations: [
     AppComponent,
-    ...APP_CONTAINERS,
-    DailyScheduleComponent
+    ...APP_CONTAINERS
   ],
   providers: [{
     provide: LocationStrategy,

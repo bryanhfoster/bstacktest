@@ -7,15 +7,5 @@ export const navItems = [
       variant: 'info',
       text: 'NEW'
     }
-  },
-  {
-    name: 'Dashboard',
-    url: '/schedule',
-    icon: 'icon-calendar'
-  },
-  {
-    name: 'Test',
-    url: '/test',
-    icon: 'icon-coffee'
   }
 ];
