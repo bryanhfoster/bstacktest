@@ -20,6 +20,14 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: './views/dashboard/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'schedule',
+        loadChildren: './views/daily-schedule/daily-schedule.module#DailyScheduleModule'
+      },
+      {
+        path: 'test',
+        loadChildren: './views/test/test.module#TestModule'
       }
     ]
   }
